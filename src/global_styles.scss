@@ -1,0 +1,85 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+//@import 'styles/breakpoints.scss';
+@import './styles/components/header.scss';
+@import './styles/components/portfolio.scss';
+@import './styles/components/services.scss';
+@import './styles/components/contact.scss';
+
+//* {
+//  outline: solid 1px red;
+//}
+:root {
+  --primary-color: #1a4b8c;
+  --secondary-color: #e63946;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #123a6f;
+  transform: translateY(-2px);
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+.fade-in {
+  opacity: 40;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}

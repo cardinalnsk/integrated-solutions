@@ -1,0 +1,37 @@
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="text-center">Свяжитесь с нами</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span><img class="service-icon" src="assets/svg/address.svg"></span>
+                    <p>г. Новосибирск, ул. Ереванская, д. 19 офис 5</p>
+                    <a [href]="twoGisLink" target="_blank"><img class="service-icon" src="assets/svg/2gis.svg"
+                                                                alt="qwe"></a>
+                </div>
+                <div class="contact-item">
+                    <span><img class="service-icon" src="assets/svg/cell-phone.svg"></span>
+                    <a href="tel:{{phoneNumber}}" style="text-decoration: none">{{ phoneNumber }}</a>
+                    <a [href]="phoneNumber | whatsapp" target="_blank"><img class="service-icon"
+                                                                            src="assets/svg/whatsapp.svg" alt="WhatsApp"></a>
+                </div>
+                <div class="contact-item">
+                    <span><img class="service-icon" src="assets/svg/mail.svg"></span>
+                    <p><a href="mailto:info@is54.ru" style="text-decoration: none">info&commat;is54.ru</a></p>
+                </div>
+                <div class="contact-item">
+                    <span><img class="service-icon" src="assets/svg/work-clock.svg"></span>
+                    <p>Пн-Пт: 9:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="contact-form ">
+                <div class="image-container">
+                    <img class="map" src="assets/img/map.png" loading="lazy">
+                </div>
+                <!--                <script src="https://forms.yandex.ru/_static/embed.js"></script>-->
+                <!--                <iframe src="https://forms.yandex.ru/cloud/6759cf27f47e73a7ae20e63c/?iframe=1" frameborder="0"-->
+                <!--                        name="ya-form-6759cf27f47e73a7ae20e63c" width="500" height="400"></iframe>-->
+            </div>
+        </div>
+    </div>
+</section>

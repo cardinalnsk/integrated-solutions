@@ -1,0 +1,13 @@
+<div class="marquee">
+    <div class="container">
+        <h2 class="text-center">Наши партнеры</h2>
+    </div>
+    <div class="marquee-inner">
+        <ng-container *ngFor="let logo of logos">
+            <img [src]="logo" alt="Logo" class="logo" loading="lazy"/>
+        </ng-container>
+        <ng-container *ngFor="let logo of logos">
+            <img [src]="logo" alt="Logo" class="logo" loading="lazy"/>
+        </ng-container>
+    </div>
+</div>

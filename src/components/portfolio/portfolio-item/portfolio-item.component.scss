@@ -1,0 +1,89 @@
+.portfolio-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background: white;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+
+.portfolio-item:hover .portfolio-item-content {
+  height: 95%;
+  transform: translateY(0);
+}
+
+.details-list {
+  //margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.details-list li {
+  margin-bottom: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.completion-date {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+/* Основные стили для проекта */
+.portfolio-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 280px; /* Фиксированная высота для картинок */
+  object-fit: cover;
+  display: block;
+}
+
+/* Оверлей при наведении */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон */
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 0; /* Скрываем оверлей по умолчанию */
+  transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+  color: #e4e4e4;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1; /* Показываем оверлей при наведении */
+}

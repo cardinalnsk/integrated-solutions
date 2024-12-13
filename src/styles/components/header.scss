@@ -1,0 +1,165 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 87px;
+}
+
+.header-container {
+  max-width: 1200px; /* Убираем фиксированную ширину */
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Позволяем переносить содержимое */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Обеспечиваем равномерное заполнение */
+  padding: 0.5rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo img {
+  height: 70px; /* Адаптируем высоту */
+  max-width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap; /* Линки могут переноситься */
+  padding: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header{
+    height: 57px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .header-container{
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    height: 40px; /* Уменьшаем логотип для небольших экранов */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    height: 57px;
+  }
+
+  .header-container{
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+
+
+  .mobile-menu-btn {
+    font-size: 1.25rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    max-width: 100%;
+    height: 57px;
+  }
+
+  .header-container{
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+
+  .mobile-menu-btn {
+    font-size: 1.25rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}

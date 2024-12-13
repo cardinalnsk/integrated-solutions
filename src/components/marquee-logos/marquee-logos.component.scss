@@ -1,0 +1,61 @@
+//.marquee {
+//    overflow: hidden;
+//    white-space: nowrap;
+//    position: relative;
+//    box-sizing: border-box;
+//}
+//
+//.marquee-inner {
+//    display: inline-block;
+//    animation: marquee 40s linear infinite; /* Зацикленная анимация */
+//}
+//
+//.logo {
+//    margin: 5px;
+//    height: 50px; /* Установите нужную высоту */
+//    padding-right: 20px; /* Отступ между логотипами */
+//}
+//
+//@keyframes marquee {
+//    from {
+//        transform: translateX(0); /* Начальная позиция */
+//    }
+//    to {
+//        transform: translateX(-50%); /* Конечная позиция */
+//    }
+//}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.marquee-inner {
+    display: inline-flex; /* Используем flex вместо inline-block */
+    animation: marquee 80s linear infinite; /* Зацикленная анимация */
+}
+
+.logo {
+    display: inline-block; /* Убедитесь, что каждый логотип — строчный элемент */
+    margin: 5px;
+    height: 50px; /* Установите нужную высоту */
+    padding-right: 20px; /* Отступ между логотипами */
+    flex-shrink: 0; /* Запрещаем масштабирование в flex */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(0); /* Начальная позиция */
+    }
+    to {
+        transform: translateX(-50%); /* Конечная позиция */
+    }
+}

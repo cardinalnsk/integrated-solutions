@@ -1,0 +1,46 @@
+    .about {
+      background-color: var(--light-bg);
+    }
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-text h2 {
+      margin-bottom: 1.5rem;
+    }
+    .features {
+      margin-top: 2rem;
+    }
+
+    .feature {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .feature-icon {
+      color: var(--primary-color);
+
+    }
+
+    .certificates{
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      grid-gap: 10px;
+      align-items: center;
+      margin-bottom: 3px;
+    }
+
+    .certificate-icon{
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+    }

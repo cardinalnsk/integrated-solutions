@@ -1,0 +1,50 @@
+.portfolio {
+  background-color: var(--light-bg);
+  padding: 3rem 1rem; /* Добавляем отступы сверху и снизу */
+  text-align: center; /* Центрируем текстовые элементы */
+}
+
+.portfolio h2 {
+  font-size: 2.5rem; /* Размер заголовка */
+  color: var(--primary-color);
+  margin-bottom: 1rem; /* Отступ под заголовком */
+}
+
+.portfolio .section-description {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 2rem; /* Отступ под описанием */
+  line-height: 1.6;
+}
+
+.portfolio-filters {
+  display: flex;
+  justify-content: center; /* Центрируем кнопки по горизонтали */
+  align-items: center; /* Центрируем кнопки по вертикали */
+  gap: 1.5rem; /* Расстояние между кнопками */
+  flex-wrap: wrap; /* Кнопки переносятся на новую строку, если места недостаточно */
+  margin-bottom: 2rem; /* Отступ под кнопками */
+}
+
+.filter-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn.active {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Сетка для проектов */
+  gap: 2rem; /* Расстояние между карточками */
+}

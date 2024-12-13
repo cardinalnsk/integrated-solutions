@@ -1,0 +1,19 @@
+<header class="header">
+    <div class="header-container">
+        <nav>
+            <div class="logo">
+                <a href="#main">
+                    <img class="logo" src="assets/img/logo_.png"
+                         alt="интегрированные решения">
+                </a>
+            </div>
+            <button class="mobile-menu-btn" (click)="toggleMenu()">☰</button>
+            <div class="nav-links" [class.active]="isMenuOpen">
+                <a href="#services">Услуги</a>
+                <a href="#portfolio">Наши работы</a>
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+            </div>
+        </nav>
+    </div>
+</header>

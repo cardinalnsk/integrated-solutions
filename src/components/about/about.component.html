@@ -1,0 +1,50 @@
+<section id="about" class="section about">
+    <div class="container">
+        <h2 class="text-center fade-in">О нашей компании</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Мы специализируемся на установке и обслуживании систем безопасности уже более 10 лет. Наша команда
+                    состоит из сертифицированных специалистов с богатым опытом работы, которые готовы предложить
+                    оптимальные решения для любого объекта.</p>
+                <p>Мы гордимся своими партнерскими отношениями с ведущими производителями и поставщиками охранного
+                    оборудования, инсталляторами систем безопасности и провайдерами охранных услуг. Это позволяет нам
+                    обеспечивать высокое качество услуг и использовать передовые технологии.</p>
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span><strong>Сертифицированные специалисты</strong> — профессионализм подтвержден официальными документами и многолетней практикой.</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span><strong>Гарантия на все работы </strong> — мы уверены в качестве предоставляемых услуг.</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span><strong>Индивидуальный подход к каждому клиенту</strong> — мы учитываем все особенности вашего объекта и предлагаем оптимальные решения для максимальной безопасности.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/img/about.jpeg"
+                     alt="Наша команда"
+                     loading="lazy"
+                     style="width: 100%; border-radius: 8px;">
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="about-image"></div>
+            <div class="about-text">
+                <p>Компания имеет Лицензию МЧС, сотрудники обучены по программе (Деятельность по монтажу, техническому
+                    обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений, а так же их
+                    проектированию) состоят в реестре проектировщиков МЧС, имеют ДИПЛОМЫ по профессиональной
+                    переподготовке в сфере "Пожарная Безопасность"</p>
+                <p>Наши сертификаты:</p>
+                <div class="features">
+                    <div class="feature" *ngFor="let feature of features">
+                        <span class="certificates"><img src="assets/svg/certificate.svg" class="certificate-icon" alt="certificate icon"><strong> - {{ feature }}</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

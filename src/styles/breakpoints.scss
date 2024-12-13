@@ -1,0 +1,13 @@
+/* Breakpoint variables */
+:root {
+  --mobile: 350px;
+  --tablet: 768px;
+  --laptop: 1024px;
+  --desktop: 1200px;
+}
+
+///* Media query mixins */
+//@custom-media --mobile-only (max-width: 479px);
+//@custom-media --tablet-and-up (min-width: 768px);
+//@custom-media --laptop-and-up (min-width: 1024px);
+//@custom-media --desktop-and-up (min-width: 1200px);

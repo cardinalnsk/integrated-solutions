@@ -1,0 +1,16 @@
+.image-certs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.image-certs__card {
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover{
+    transform: translateY(-5px);
+  }
+}

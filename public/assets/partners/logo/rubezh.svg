@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 150 150">
+<!--    <g transform="translate(30, 30)">-->
+    <g >
+<!--        <path fill="#5B6770" d="M 0h150v150H0z" ></path>-->
+        <rect fill="#5B6770" x="" y="" width="150" height="150"></rect>
+        <g transform="translate(20, 20)scale(1.3)">
+
+            <path fill="#fff" fill-rule="evenodd"
+                  d="m59.986 40.723 1.97-4.358H41.551l-4.522 9.976h-6.493l6.957-15.594H71L64.043 46.34h-7.768L69.261 64h-7.42l-5.913-8.141H15L30.536 21l4.058 5.619-10.55 23.736h27.942l-7.073-9.632h15.304-.231Z"
+                  clip-rule="evenodd"></path>
+        </g>
+
+    </g>
+</svg>
